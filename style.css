@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: white;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 60px;
+  background: rgba(0,0,0,0.9);
+  z-index: 100;
+}
+
+.logo {
+  color: #00f2ff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00ffd5;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.hero span {
+  color: #00ffd5;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #00ffd5;
+  box-shadow: 0 0 20px #00ffd5;
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #00ffd5;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid #00ffd5;
+  color: #00ffd5;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px #00ffd5;
+}
+
+.btn-outline:hover {
+  background: #00ffd5;
+  color: black;
+}
+
+/* Sections */
+section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+h2 {
+  color: #00ffd5;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skills div {
+  border: 1px solid #00ffd5;
+  padding: 15px 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skills div:hover {
+  background: #00ffd5;
+  color: black;
+  transform: scale(1.1);
+}
+
+
+/*education*/
+
+#education{
+  text-align:center;
+  padding:50px 0;
+}
+
+
+/* Title */
+.edu-title{
+  font-size:30px;
+  color:#00ffd5;
+  margin-bottom:30px;
+  text-shadow:0 0 10px #00ffd5;
+}
+
+.edu-card{
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+
+/* Education Cards */
+.edu-card{
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  padding:20px;
+  margin:15px auto;
+  width:60%;
+  border-radius:15px;
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+
+/* Hover Effect */
+.edu-card:hover{
+  transform: scale(1.05);
+  background: rgba(0,255,213,0.15);
+}
+
+.edu-card h3{
+  color:#00ffd5;
+  font-size:20px;
+}
+
+.edu-card p{
+  font-size:18px;
+  font-weight:bold;
+}
+
+.edu-card span{
+  font-size:14px;
+  color:#ccc;
+}
+
+
+
+
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  border: 1px solid #00ffd5;
+  padding: 20px;
+  width: 280px;
+  border-radius: 12px;
+  transition: 0.3s;
+  background: rgba(255,255,255,0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00ffd5;
+}
+
+.project-btns {
+  margin-top: 10px;
+}
+
+
+/*Any query  */
+ .form-container {
+        width: 350px;
+        margin: 80px auto;
+        padding: 30px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+    }
+
+ h2 {
+        text-align: center;
+        color: #00ffd5; 
+        margin-bottom: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 8px;
+        background: #1e293b;
+        color: white;
+        outline: none;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #94a3b8;
+    }
+
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: #00ffd5;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00ffd5;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*socail*/
+.socail{
+    margin-top: 30px;
+    border-top: 3px solid #3a3a3a;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.socail img{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+}
+.socail img:hover{
+    filter: grayscale(0) invert(0);
+
+}
+
+
+
+/* Footer */
+footer {
+  background: black;
+  padding: 10px;
+  text-align: center;
+}
