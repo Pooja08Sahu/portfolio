@@ -1,0 +1,298 @@
+.contact {
+  min-height: 100vh;
+  padding: 100px 8%;
+  background: #222930;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 80px;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.contact-left {
+  width: 42%;
+}
+
+.contact-left h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.contact-left h2 span {
+  color: #00AEB5;
+}
+
+.contact-left p {
+  margin-top: 18px;
+
+  color: #C4C9CD;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   ILLUSTRATION
+========================= */
+
+.contact-illustration {
+  width: 100%;
+  height: 270px;
+
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-illustration img {
+  width: 280px;
+  max-width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: transform 0.4s ease;
+}
+
+.contact-illustration img:hover {
+  transform: translateY(-8px);
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.contact-right {
+  width: 55%;
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+
+/* =========================
+   INPUT ROW
+========================= */
+
+.contact-input-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.contact-input-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.contact-input-group label {
+  margin-bottom: 8px;
+
+  color: #D9DDE1;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-input-group input,
+.contact-input-group textarea {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  background: #293139;
+
+  border: 1px solid rgba(255, 255, 255, 0.04);
+
+  border-radius: 5px;
+
+  outline: none;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.contact-input-group input {
+  height: 43px;
+}
+
+.contact-input-group textarea {
+  resize: none;
+}
+
+.contact-input-group input::placeholder,
+.contact-input-group textarea::placeholder {
+  color: #777f86;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+.contact-input-group input:focus,
+.contact-input-group textarea:focus {
+  border-color: #00AEB5;
+
+  background: #2c353d;
+
+  box-shadow:
+    0 0 0 2px rgba(0, 174, 181, 0.08);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message-group {
+  margin-top: 2px;
+}
+
+.message-group textarea {
+  min-height: 145px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-submit {
+  border: none;
+
+  padding: 11px 20px;
+
+  background: #00AEB5;
+
+  color: #ffffff;
+
+  border-radius: 25px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-submit span {
+  font-size: 13px;
+}
+
+.contact-submit:hover {
+  background: #00C6CC;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 174, 181, 0.3);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+  .contact {
+    padding: 80px 5%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+
+    gap: 50px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-left {
+    text-align: center;
+  }
+
+  .contact-illustration {
+    height: 230px;
+  }
+
+  .contact-right {
+    max-width: 650px;
+  }
+}
+
+
+@media (max-width: 550px) {
+
+  .contact {
+    padding: 70px 5%;
+  }
+
+  .contact-left h2 {
+    font-size: 38px;
+  }
+
+  .contact-input-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-illustration {
+    height: 200px;
+  }
+
+  .contact-illustration img {
+    width: 230px;
+  }
+}

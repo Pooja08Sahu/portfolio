@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  min-height: calc(100vh - 75px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 60px 8%;
+
+  background: #222930;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.home-content {
+  width: 55%;
+  z-index: 2;
+}
+
+
+/* HELLO */
+
+.hello {
+  font-size: 21px;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  color: #00AEB5;
+}
+
+
+/* NAME */
+
+.home h1 {
+  font-size: 65px;
+  font-weight: 800;
+
+  margin-bottom: 10px;
+
+  color: #FFFFFF;
+}
+
+
+/* =========================
+   FRONTEND DEVELOPER
+========================= */
+
+.home h2 {
+  min-height: 55px;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  color: #00AEB5;
+}
+
+
+/* CURSOR */
+
+.cursor {
+  color: #00AEB5;
+
+  -webkit-text-fill-color: #00AEB5;
+
+  animation: blink 0.7s infinite;
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* DESCRIPTION */
+
+.description {
+  max-width: 600px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #C4C9CD;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.home-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+
+/* PRIMARY BUTTON */
+
+.home-btn {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  text-decoration: none;
+
+  color: #FFFFFF;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  border-radius: 30px;
+
+  background: #00AEB5;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 8px 25px rgba(0, 174, 181, 0.25);
+}
+
+
+.home-btn:hover {
+  transform: translateY(-4px);
+
+  background: #00969D;
+
+  box-shadow:
+    0 12px 30px rgba(0, 174, 181, 0.35);
+}
+
+
+/* OUTLINE BUTTON */
+
+.outline-btn {
+  color: #FFFFFF;
+
+  background: transparent;
+
+  border: 2px solid #00AEB5;
+
+  box-shadow: none;
+}
+
+
+.outline-btn:hover {
+  color: #FFFFFF;
+
+  background: #00AEB5;
+
+  border-color: #00AEB5;
+}
+
+
+/* =========================
+   RIGHT IMAGE
+========================= */
+
+.home-image {
+  width: 45%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  min-height: 500px;
+}
+
+
+/* =========================
+   BLURRED TEAL GLOW
+========================= */
+
+.image-glow {
+  position: absolute;
+
+  width: 390px;
+  height: 390px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #00AEB5,
+    #008F96,
+    #00C6CC
+  );
+
+  filter: blur(50px);
+
+  opacity: 0.25;
+
+  animation: glow 4s ease-in-out infinite;
+}
+
+
+@keyframes glow {
+  0% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+
+/* =========================
+   IMAGE CIRCLE
+========================= */
+
+.image-circle {
+  width: 365px;
+  height: 365px;
+
+  border-radius: 50%;
+
+  padding: 7px;
+
+  position: relative;
+
+  z-index: 2;
+
+  background: linear-gradient(
+    135deg,
+    #00AEB5,
+    #008F96,
+    #00C6CC
+  );
+
+  box-shadow:
+    0 0 30px rgba(0, 174, 181, 0.25),
+    0 0 60px rgba(0, 174, 181, 0.15);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border-radius: 50%;
+
+  border: 5px solid #222930;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .home {
+    padding: 50px 5%;
+  }
+
+  .home h1 {
+    font-size: 52px;
+  }
+
+  .home h2 {
+    font-size: 32px;
+  }
+
+  .image-circle {
+    width: 310px;
+    height: 310px;
+  }
+
+  .image-glow {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .home {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 50px;
+
+    padding-top: 70px;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .home-image {
+    width: 100%;
+
+    min-height: 380px;
+  }
+
+  .home h1 {
+    font-size: 45px;
+  }
+
+  .home h2 {
+    font-size: 29px;
+  }
+
+  .description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .image-circle {
+    width: 300px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,263 @@
+.skills {
+  min-height: 100vh;
+
+  padding: 100px 8%;
+
+  background: #222930;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.skills-heading {
+  text-align: center;
+
+  margin-bottom: 70px;
+}
+
+.skills-heading p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 30px;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+.skills-heading h2 {
+  margin: 0;
+
+  font-size: 58px;
+
+  font-weight: 900;
+
+  color: #ffffff;
+}
+
+.skills-heading h2 span {
+  color: #00AEB5;
+}
+
+.heading-line {
+  width: 90px;
+
+  height: 5px;
+
+  margin: 12px auto 18px;
+
+  background: #00AEB5;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 0 15px rgba(0, 174, 181, 0.5);
+}
+
+.skills-heading h4 {
+  margin: 0;
+
+  color: #C4C9CD;
+
+  font-size: 18px;
+
+  font-weight: 400;
+}
+
+
+/* =========================
+   SKILLS GRID
+========================= */
+
+.skills-container {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  column-gap: 80px;
+
+  row-gap: 65px;
+}
+
+
+/* =========================
+   SINGLE SKILL
+========================= */
+
+.skill-item {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================
+   TECHNOLOGY NAME
+========================= */
+
+.skill-item h3 {
+  margin: 0 0 18px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   CIRCLE
+========================= */
+
+.circle {
+  width: 130px;
+
+  height: 130px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* SVG */
+
+.circle svg {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  transform: rotate(-90deg);
+}
+
+
+/* =========================
+   BACKGROUND CIRCLE
+========================= */
+
+.circle-bg {
+  fill: none;
+
+  stroke: #34434E;
+
+  stroke-width: 10;
+}
+
+
+/* =========================
+   PROGRESS CIRCLE
+========================= */
+
+.circle-progress {
+  fill: none;
+
+  stroke: #00C6CC;
+
+  stroke-width: 10;
+
+  stroke-linecap: round;
+
+  transition:
+    stroke-dashoffset 0.02s linear;
+
+  filter:
+    drop-shadow(
+      0 0 7px rgba(0, 198, 204, 0.7)
+    );
+}
+
+
+/* =========================
+   PERCENTAGE
+========================= */
+
+.percentage {
+  position: relative;
+
+  z-index: 2;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  font-weight: 800;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .skills {
+    padding: 80px 5%;
+  }
+
+  .skills-container {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    column-gap: 50px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .skills {
+    padding: 70px 5%;
+  }
+
+  .skills-heading {
+    margin-bottom: 50px;
+  }
+
+  .skills-heading p {
+    font-size: 24px;
+  }
+
+  .skills-heading h2 {
+    font-size: 45px;
+  }
+
+  .skills-heading h4 {
+    font-size: 15px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+
+    row-gap: 55px;
+  }
+
+}
